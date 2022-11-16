@@ -5,6 +5,7 @@ import isTomorrow from 'date-fns/isTomorrow';
 import isThisWeek from 'date-fns/isThisWeek';
 import isYesterday from 'date-fns/isYesterday';
 import isBefore from 'date-fns/isBefore';
+import './style.css';
 
 const height = document.body.scrollHeight;
 document.body.style.height = `${height}px`;
