@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="https://kit.fontawesome.com/f6252331b6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <div class="header">
+            <div class="nav-links">
+                <div class="logo">
+                    <h1>TODO</h1>
+                </div>
+                <nav>
+                    <span class="plus">+</span>
+                    <button class="signin">Sign In</button>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <div class="a all-tasks"><i class="fa-solid fa-globe"></i> All Tasks</div>
+            <div class="a today"><i class="fa-solid fa-calendar-days"></i> Today</div>
+            <div class="a tomorrow"><i class="fa-solid fa-calendar-day"></i> Tomorrow</div>
+            <div class="a this-week"><i class="fa-regular fa-calendar"></i> This Week</div>
+            <div class="a completed-tasks"><i class="fa-solid fa-clipboard-list"></i> Completed Tasks</div>
+            <hr>
+            <div class="projects">
+                <h2 style="color: rgb(51,50,50); margin-bottom: 5px; padding: 5px;"><i class="fa-solid fa-list-check"></i> Projects</h2>
+            </div>
+            <p class="add"><i class="fa-solid fa-plus"></i> Add Project</p>
+        </div>
+
+        <div class="main">
+            <div class="tasks-section">
+                <h2 id="tasks-section-h2"></h2>
+                <div class="tasks">
+                </div>
+            </div>
+        </div>
+        </div>
+        
+<!-- ===================================================================================================== -->
+
+        <div class="overlay">   <!-- For adding a new task -->
+            <div class="info-box">
+                <div class="heading">
+                    <h2>New Task</h2>
+                </div>
+                <hr>
+                <form action="" id="form">
+                    <div class="title">
+                        <label for="title">Title:</label>
+                        <br>
+                        <input type="text" class="overlay-input" id="task-input-text">
+                    </div>
+
+                    <div class="due-date">
+                        <label for="due-date">Due Date:</label>
+                        <br>
+                        <input type="date" class="overlay-input" id="task-input-date">
+                    </div>
+
+                    <div class="description">
+                        <label for="description">Description</label>
+                        <br>
+                        <textarea name="" cols="30" rows="5" id="task-input-textarea"></textarea>
+                    </div>
+
+                    
+
+                    <div class="priority">
+                        <label for="priority">Priority:</label>
+                        <br>
+                        <select name="" class="overlay-select" id="task-input-priority">
+                            <option value="Low" selected>Low</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="High" selected>High</option>
+                        </select>
+                    </div>
+
+                    <div class="select-project">
+                        <label for="select-project">Project:</label>
+                        <br>
+                        <select name="" class="overlay-select" id="task-input-project">
+                            <!-- <option value="Keati" selected>Keati</option>
+                            <option value="Project1" selected>Project 1</option> -->
+                        </select>
+                    </div>
+                </form>
+                <div class="buttons">
+                    <button id="close-task-form" class="close">Close</button>
+                    <button class="add-task">Add Task</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -------------------------------------------------------------------------------------------- -->
+
+        <div class="overlay2">  <!-- For adding a new project -->
+            <div class="info-box">
+                <div class="heading">
+                    <h2>New Project</h2>
+                </div>
+                <hr>
+                <form action="" id="form2">
+                    <div class="title">
+                        <label for="title">Title:</label>
+                        <br>
+                        <input type="text" class="overlay2-input" id="project-input-text" required>
+                    </div>
+                </form>
+                <div class="buttons">
+                    <button id="close-project-form" class="close">Close</button>
+                    <button class="add-project" type="submit">Add Project</button>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
