@@ -63,15 +63,20 @@ nav {
 }
 
 nav .plus {
-    color: white;
-    font-size: 1.9em;
+    font-size: 1.2em;
     margin-right: 25px;
     cursor: pointer;
     transition: all .5s;
+    border: none;
+    color: #E75A7C;
+    border-radius: 13px;
+    outline: none;
+    padding: 0 10px;
+
 }
 
 nav .plus:hover {
-    transform: rotate(180deg);
+    transform: scale(1.1);
 }
 
 hr {
